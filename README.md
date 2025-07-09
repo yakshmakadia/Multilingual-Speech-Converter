@@ -1,4 +1,4 @@
-# 🌐 Multilingual Text-to-Speech & Speech-to-Text Platform
+#  Multilingual Text-to-Speech & Speech-to-Text Platform
 
 A full-stack web app that enables:
 ✅ Text-to-Speech (TTS) in multiple languages  
@@ -12,7 +12,7 @@ Built with:
 
 ---
 
-## 🏗️ Project Structure
+##  Project Structure
 client/
 ├── src/
 │ ├── components/
@@ -35,7 +35,7 @@ Edit
 
 ---
 
-## ✨ Features
+##  Features
 - 🌍 Multilingual TTS: Convert text into speech in your chosen language
 - 🗣️ STT: Transcribe speech into text
 - 🔄 Translate text between languages
@@ -43,6 +43,20 @@ Edit
 - ⚙ Modular, scalable architecture
 
 ---
+##  Tech Stack
+Frontend: React + TypeScript, shadcn/ui, TanStack Query
+Backend: Node.js, Express, TypeScript
+Speech: Google Cloud, Azure TTS/STT, Whisper etc.
+Translation: googletrans / Google Translate API
+Validation: Zod / Yup
+
+Future Enhancements
+
+Multiple voice options (male/female, accents)
+Batch text/audio conversion
+User accounts & history
+Usage analytics
+Mobile-first UI improvements
 
 ## 🚀 Getting Started
 
@@ -85,24 +99,3 @@ Edit
 # server/.env
 GOOGLE_API_KEY=your_google_api_key
 OPENAI_API_KEY=your_openai_api_key
-🧰 Tech Stack
-Frontend: React + TypeScript, shadcn/ui, TanStack Query
-
-Backend: Node.js, Express, TypeScript
-
-Speech: Google Cloud, Azure TTS/STT, Whisper etc.
-
-Translation: googletrans / Google Translate API
-
-Validation: Zod / Yup
-
-🌱 Future Enhancements
-Multiple voice options (male/female, accents)
-
-Batch text/audio conversion
-
-User accounts & history
-
-Usage analytics
-
-Mobile-first UI improvements
