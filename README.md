@@ -1,42 +1,108 @@
-VoiceFlow - Multilingual Conversion Platform
-Project Overview
-A comprehensive multilingual platform that enables seamless communication across different languages through advanced speech-to-text, text-to-speech, and translation technologies. The platform supports major world languages including Gujarati, Hindi, Tamil, English, Spanish, French, German, and Japanese.
+# 🌐 Multilingual Text-to-Speech & Speech-to-Text Platform
 
-Core Features
-Speech to Text: Convert spoken words into written text with real-time processing
-Text to Speech: Transform written text into natural-sounding speech
-Translation: Translate text between multiple languages seamlessly
-Multi-language Support: Support for 8+ major world languages
-Real-time Processing: Lightning-fast conversion with minimal latency
-Privacy Focused: Secure data processing without permanent storage
-Technical Architecture
-Frontend: React.js with TypeScript and Tailwind CSS
-Backend: Express.js server with TypeScript
-UI Components: shadcn/ui component library
-Routing: Wouter for client-side routing
-Storage: In-memory storage system
-Language Services: Fallback implementations with API integration support
-Current Implementation Status
-✅ Complete multilingual platform restored (Dec 28, 2024) ✅ Navigation updated for language conversion features ✅ Home page showcasing speech-to-text, text-to-speech, and translation ✅ All three main feature pages functional ✅ Language selection and processing capabilities ✅ Modern responsive UI design
+A full-stack web app that enables:
+✅ Text-to-Speech (TTS) in multiple languages  
+✅ Speech-to-Text (STT) transcription  
+✅ Seamless translation features
 
-Recent Changes
-December 28, 2024
+Built with:
+- React + TypeScript frontend (shadcn/ui)
+- Node.js + TypeScript backend with modular services
+- Shared schemas for validation and consistency
 
-Restored original multilingual conversion platform after temporary SoleVibe e-commerce project
-Updated routing to include /text-to-speech, /speech-to-text, and /translation pages
-Redesigned header navigation for VoiceFlow branding and language tools
-Created new home page highlighting multilingual capabilities
-Maintained all existing language processing functionality
-User Preferences
-User prefers the original multilingual platform over e-commerce applications
-Focus on language conversion and translation capabilities
-Maintain professional, accessible UI design
-Supported Languages
-English (en) 🇺🇸
-Hindi (hi) 🇮🇳
-Gujarati (gu) 🇮🇳
-Tamil (ta) 🇮🇳
-Spanish (es) 🇪🇸
-French (fr) 🇫🇷
-German (de) 🇩🇪
-Japanese (ja) 🇯🇵
+---
+
+## 🏗️ Project Structure
+client/
+├── src/
+│ ├── components/
+│ │ ├── layout/ (Header, Footer)
+│ │ └── ui/ (shadcn components, audio controls)
+│ ├── hooks/ (speech recognition, TTS)
+│ ├── lib/ (languages, utils, query client)
+│ └── pages/ (home, text-to-speech, speech-to-text, translation)
+server/
+├── services/ (speech-service, translation-service)
+├── index.ts (server entry point)
+├── routes.ts (API routes)
+└── storage.ts (file storage, caching)
+shared/
+└── schema.ts
+
+yaml
+Copy
+Edit
+
+---
+
+## ✨ Features
+- 🌍 Multilingual TTS: Convert text into speech in your chosen language
+- 🗣️ STT: Transcribe speech into text
+- 🔄 Translate text between languages
+- 🖌️ Beautiful UI with shadcn components
+- ⚙ Modular, scalable architecture
+
+---
+
+## 🚀 Getting Started
+
+### 📦 Install dependencies
+```bash
+cd client
+npm install
+
+cd ../server
+npm install
+🏃 Run the app locally
+Start backend
+bash
+Copy
+Edit
+cd server
+npm run dev
+Backend runs on: http://localhost:4000
+
+Start frontend
+bash
+Copy
+Edit
+cd client
+npm run dev
+Frontend runs on: http://localhost:3000
+
+🔧 Configuration
+Add environment variables to:
+
+client/.env.local
+
+server/.env
+
+Example:
+
+env
+Copy
+Edit
+# server/.env
+GOOGLE_API_KEY=your_google_api_key
+OPENAI_API_KEY=your_openai_api_key
+🧰 Tech Stack
+Frontend: React + TypeScript, shadcn/ui, TanStack Query
+
+Backend: Node.js, Express, TypeScript
+
+Speech: Google Cloud, Azure TTS/STT, Whisper etc.
+
+Translation: googletrans / Google Translate API
+
+Validation: Zod / Yup
+
+🌱 Future Enhancements
+Multiple voice options (male/female, accents)
+
+Batch text/audio conversion
+
+User accounts & history
+
+Usage analytics
+
+Mobile-first UI improvements
